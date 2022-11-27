@@ -15,7 +15,71 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+header{
+    height: 100px;
+    /*background-color: #61481C;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .logo{
     width: 100px;
     height: 110px;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+}
+
+ul li a{
+    padding: 0 20px;
+    text-decoration: none;
+    color: #3a3a3a;
+    display: inline-block;
+}
+
+li a::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background: #905EB8;
+    transition:all .5s;
+}
+
+li a:hover::after{
+    width: 100%;
+}
+
+main{
+    display: flex;
+    border: 1px solid rebeccapurple;
+    height: calc(100vh - 100px);
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-image{
+    max-width: 670px;
+    height: auto;
+}
+
+.left-content{
+    width: 30%;
+}
+
+main h1{
+    font-size: 54px;
+    color: #6626A0;
+    text-transform: uppercase;
+}
+
+main h2{
+    font-size: 25px;
+    color: goldenrod;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 8px;
 }
