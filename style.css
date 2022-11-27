@@ -1,9 +1,21 @@
+/* 
+    #61481C
+    #A47E3B
+    #BF9742
+    #E6B325
+*/
+
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
-img{
-    width: 80px;
-    height: 90px;
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logo{
+    width: 100px;
+    height: 110px;
 }
