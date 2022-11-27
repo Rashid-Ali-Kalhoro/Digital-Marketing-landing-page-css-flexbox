@@ -1,8 +1,8 @@
 /* 
-    #61481C
-    #A47E3B
-    #BF9742
-    #E6B325
+    #fff   
+    #3a3a3a
+    #6626A0 
+    #905EB8
 */
 
 *{
@@ -17,7 +17,6 @@ body{
 
 header{
     height: 100px;
-    /*background-color: #61481C;*/
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -31,6 +30,7 @@ header{
 ul{
     display: flex;
     list-style-type: none;
+    align-items: center;
 }
 
 ul li a{
@@ -55,7 +55,7 @@ li a:hover::after{
 
 main{
     display: flex;
-    border: 1px solid rebeccapurple;
+    /*border: 1px solid rebeccapurple;*/
     height: calc(100vh - 100px);
     align-items: center;
     justify-content: center;
@@ -78,8 +78,57 @@ main h1{
 
 main h2{
     font-size: 25px;
-    color: goldenrod;
+    color: #2F3C48;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 8px;
+}
+
+main p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #1F2830;
+    line-height: 31.5px;
+    margin: 30px 0;
+}
+
+.learn_more-btn{
+    padding: 15px 30px;
+    background: #6626A0;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+
+.learn_more-btn::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: #fff;
+    display: block;
+    transition: all .5s;
+}
+
+.learn_more-btn:hover::after{
+    width: 100%;
+    
+}
+
+.sign-up{
+    padding: 10px 15px;
+    background: #7d30c6;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 50px;
+
+}
+
+.sign-up::after{
+    background-color: #fff;
 }
